@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar top*/
+.navbar-top{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.social-links{
+    margin-left: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i img:hover{
+   background-color: rgba(238, 224, 208);
+   border-radius: 50px;
+}
+/*responsive purposes*/
+@media screen and (max-width: 420px){
+    .social-links i img{
+       width: 20px;
+     }
+}
+
+.logo h3{
+    font-weight: bold;
+}
+/*responsive purposes*/
+@media screen and (max-width: 420px){
+    .logo h3{
+        font-size: 20px;
+    }
+}
+.icons i img{
+    margin-left: 10px;
+    cursor: pointer;
+}
+/*responsive purposes*/
+@media screen and (max-width: 420px){
+    .icons i img{
+        width: 20px;
+    }
+}
+
+/* main content */
+.main-content{
+    width: 100%;
+    height: 90vh;
+    /*background-image: url('images/b3.webp');*/
+    background-color: rgba(0, 255, 64, 0.425);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+/* navbar*/
+.navbar-color{
+    background-color: rgba(238, 224, 204);
+}
+.navbar-nav{
+    margin: auto;
+}
+.nav-link{
+    margin-left: 30px;
+    font-weight: bold;
+    color: black;
+    transition: o.5s ease;
+    cursor: pointer;
+}
+.nav-link:hover{
+    color: #ffffff;
+}
+/* main content */
+
+/*content*/
+.content{
+    margin-top: 80px;
+    margin-left: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -60%);
+    color: white;
+}
+.content h1{
+    font-size: 50px;
+}
+
+#btn button{
+    width: 150px;
+    height: 32px;
+    background: transparent;
+    border: 1px solid black;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn button:hover{
+    background-color: #ffffff;
+}
+/*responsive*/
+@media screen and (max-width:420px) {
+    .content h1{
+        font-size: 30px;
+    }
+}
+/*Card1*/
+#btn2 button{
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#btn2 button:hover{
+    background-color: rgb(158, 231, 140);
+}
+/*Card1*/
+#tcp{
+    box-shadow: 0 0 5px black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#tcp:hover{
+    transform: translateY(-10px);
+}
+
+/*btn3*/
+#btn3 button{
+    width: 100px;
+    height: 30px;
+    background-color: green;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#btn3 button:hover{
+    background-color: rgb(205, 248, 13);
+}
+.prices{
+    color: rgb(248, 13, 13);
+    font-style: italic;
+}
+
+/*about*/
+#btn1 button{
+    width: 150px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: 0.5s ease;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#btn1 button:hover{
+    background-color: rgb(158, 231, 140);
+}
+
+/*footer*/
+#footer{
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+}
+#footer h1{
+    color: white;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+}
+.icons{
+    color: rgba(238, 224, 208);
+    font-size: 30px;
+    cursor: pointer;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+}

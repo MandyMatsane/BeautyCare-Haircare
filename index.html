@@ -1,73 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Boostrap link-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+        <!--boxicons-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
+
 <body>
-    <header class="container">
-        <nav class="navbar">
-            <div class="mainmenu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="product.html">Products</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+
+    <!--Navbar top-->
+    <div class="container">
+        <div class="navbar-top">
+            <div class="social-links">
+                <i><img src="images/t.png" alt="twitter" width="30px"></i>
+                <i><img src="images/w.png" alt="whatsapp" width="40px"></i>
+                <i><img src="images/i.png" alt="instagram" width="30px"></i>
+            </div>
+
+            <div class="logo">
+                <h3>HAIRCARE</h3>
+            </div>
+
+            <div class="icons">
+                <i><img src="images/search.png" alt="search" width="30px"></i>
+                <i><img src="images/heart.png" alt="heart" width="30px"></i>
+                <i><img src="images/cart.png" alt="shopping-cart" width="30px"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="main-content">
+        <nav class="navbar navbar-expand-md" id="navbar-color">
+
+            <div class="container"></div>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span><i><img src="images/menu.png" alt="menu" width="30px"></i></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
                 </ul>
             </div>
-            <div class="search-bar">
-                <form action="#" method="get">
-                    <input type="text" name="query" placeholder="Search...">
-                    <button type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-    </header>
+    </div>
+    </nav>
 
-    <section class="home-intro" id="#home">
-        <h3>HairCare</h3>
-        <p>Discover the best products for your hair.</p>
-    </section>
+    <div class="content">
+        <h1>Nurture Your Hair <br>Nurture Yourself.</h1>
+        <p>Your hair is your crown, and caring for it means caring for you. Our products provide the nourishment your
+            hair needs to thrive, helping you feel confident and beautiful every day.</p>
+        <div id="btn"><button>Shop Now</button></div>
+    </div>
+    </div>
+    <!-- main content -->
 
-    <section class="featured-products">
-        <h3>Best Sellers</h3>
-        <div class="product-list">
-            <div class="product-item">
-                <img src="images/hairbrush.jpg" alt="hairbrush">
-                <div class="product-details">
-                    <h4 class="product-name">Hairbrush</h4>
-                    <p class="product-price">R255.00</p>
-                    <a class="product-action" href="#">Add To Cart</a>
+    <!-- Card-->
+    <div class="container">
+        <h3 class="text-center" style="padding-top: 30px;">SERVICES WE OFFER</h3>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="images/s1.jpeg" alt="" class="card image-top" height="230px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Custom Haircare Solutions</h5>
+                        <p class="card-text text-center">Our custom haircare solutions are designed to meet your unique
+                            needs. Whether your hair is curly, straight, or wavy, our expert stylists will create a
+                            personalized regimen to keep your hair healthy and vibrant.</p>
+                        <div id="btn2" class="text-center"><button>View More</button></div>
+                    </div>
                 </div>
             </div>
-            
-            <div class="product-item">
-                <img src="images/hair-food.jpg" alt="hair-food">
-                <div class="product-details">
-                    <h4 class="product-name">Hairfood</h4>
-                    <p class="product-price">R450.00</p>
-                    <a class="product-action" href="#">Add To Cart</a>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="images/s2.jpg" alt="" class="card image-top" height="230px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Professional Styling Services</h5>
+                        <p class="card-text text-center">From chic cuts to elegant updos, our professional styling
+                            services use the latest techniques and high-quality products to give you the perfect look
+                            for any occasion. Let our talented stylists help you look and feel your best.</p>
+                        <div id="btn2" class="text-center"><button>View More</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="images/s4.jpeg" alt="" class="card image-top" height="230px">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Advanced Hair Treatments</h5>
+                        <p class="card-text text-center">We offer advanced hair treatments that address various
+                            concerns, from damage repair to scalp health. Using premium ingredients and cutting-edge
+                            technology, our treatments deliver effective results for healthier, more beautiful hair.</p>
+                        <div id="btn2" class="text-center"><button>View More</button></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- Card-->
 
-    <section class="latest-arrivals">
-        <h3>New Arrivals</h3>
-        <p>Check out the latest additions to our hair care line.</p>
-    </section>
+    <!--Card 2-->
+    <div class="container">
+        <h3 class="text-center" style="padding-top: 30px;">OUR HAIR CARE COLLECTION</h3>
+        <div class="row" style="margin-top: 100px;">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tcp">
+                    <img src="images/styling.png" alt="" class="card image-top">
+                    <div class="card-img-overlay">
+                        <h4 class="card-tittle" style="color: red;">Styling Products</h4>
+                        <p class="card-text">Keep your style in place all day with our reliable styling solutions.</p>
+                        <p class="prices" style="font-weight: bold; font-size: 18px;">From R200.00</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tcp">
+                    <img src="images/shampo2.jpeg" alt="" class="card image-top">
+                    <div class="card-img-overlay">
+                        <h4 class="card-tittle" style="color: red;">Moisturizing Shampoo</h4>
+                        <p class="card-text">Enjoy clean, manageable hair every day with our gentle shampoos.</p>
+                        <p class="prices" style="font-weight: bold; font-size: 18px;">From R450.00</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tcp">
+                    <img src="images/hair-spray.jpeg" alt="" class="card image-top">
+                    <div class="card-img-overlay">
+                        <h4 class="card-tittle" style="color: red;">Hair Spray</h4>
+                        <p class="card-text">Maintain your style with sprays that offer flexible hold and refreshing
+                            scent.</p>
+                        <p class="prices" style="font-weight: bold; font-size: 18px;">From R150.00</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tcp">
+                    <img src="images/brushes.jpeg" alt="" class="card image-top">
+                    <div class="card-img-overlay">
+                        <h4 class="card-tittle" style="color: red;">Hair Brushes</h4>
+                        <p class="card-text">Find the ideal brush for every look, from sleek and smooth to voluminous
+                            and bouncy.</p>
+                        <p class="prices" style="font-weight: bold; font-size: 18px;">From R20.00</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tcp">
+                    <img src="images/oil-growth.jpg" alt="" class="card image-top">
+                    <div class="card-img-overlay">
+                        <h4 class="card-tittle" style="color: red;">Hair Growth Oil</h4>
+                        <p class="card-text"> A blend of natural oils to stimulate hair growth.</p>
+                        <p class="prices" style="font-weight: bold; font-size: 18px;">From R250.00</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" id="tcp">
+                    <img src="images/st.jpg" alt="" class="card image-top">
+                    <div class="card-img-overlay">
+                        <h4 class="card-tittle" style="color: red;">Hair Tools</h4>
+                        <p class="card-text">Hairdryers, straighteners, curling irons, or diffusers.</p>
+                        <p class="prices" style="font-weight: bold; font-size: 18px;">From R650.00</p>
+                        <div id="btn3"><button>Shop Now</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <section class="seasonal-highlights">
-        <h3>Seasonal Picks</h3>
-        <p>Our top recommendations for the season.</p>
-    </section>
+    <!--About us-->
+    <div class="container">
+        <h1 class="text-center">ABOUT US</h1>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="images/about.webp" alt="">
 
-    <footer>
-        <div class="footer-copyright">
-            <p>&copy; 2024 BeautyCare. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="col-md-6 py-3 py-md-0">
+                <div class="card">
+                    <p>Welcome to <strong>BeautyCare Haircare,</strong> where beauty meets expertise. We are dedicated to transforming
+                        your hair care routine with our premium collection of products designed to nourish, style, and
+                        revitalize every strand.
+                        At <strong>BeautyCare Haircare,</strong> we blend innovation with tradition, using high-quality ingredients and
+                        cutting-edge technology to bring you exceptional results. Our range includes everything from
+                        luxurious shampoos and conditioners to precision styling tools, all crafted to cater to your
+                        unique hair needs.</p>
+                    <p>Our mission is to empower you to embrace your natural beauty with confidence. Discover the art of
+                        perfect hair care with BeautyCare Haircare, and let your hair shine with vitality and elegance.
+                    </p>
+                    <div id="btn1" class="text-center"><button>Read More...</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="footer">
+        <h1 class="text-center">Haircare</h1>
+        <p class="text-center">Your hair is your crown, and caring for it means caring for you.</p>
+
+        <div class="icons text-center">
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-instagram"></i>
+        </div>
+
+        <div class="copyright text-center">
+            &copy; 2024 BeautyCare. All rights reserved.
         </div>
     </footer>
 </body>
+
 </html>
